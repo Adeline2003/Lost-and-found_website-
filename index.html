@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost & Found Platform | Reconnect With Your Belongings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+    <nav class="nav-links">
+      <a href="search.html">Browse Items</a>
+      <a href="post-lost.html" class="btn btn-outline-danger">Report Lost</a>
+      <a href="post-found.html" class="btn btn-outline-success">Report Found</a>
+    </nav>
+    <div class="nav-auth">
+      <a href="login.html" class="btn btn-text">Login</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Lost Something? Or Found Belongings?</h1>
+      <p>The central hub to report, search, and reclaim lost items on campus.</p>
+      
+      <!-- Quick Search Bar -->
+      <form action="search.html" method="GET" class="hero-search-bar">
+        <input type="text" name="keyword" placeholder="Search by item name, keyword, or location..." class="form-control">
+        <select name="type" class="form-control">
+          <option value="all">All Types</option>
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quick Action CTA -->
+  <section class="container action-cards-grid">
+    <div class="card action-card">
+      <h2>I Lost an Item</h2>
+      <p>Submit a description and let the community help you locate it.</p>
+      <a href="post-lost.html" class="btn btn-danger">Post Lost Item</a>
+    </div>
+    <div class="card action-card">
+      <h2>I Found an Item</h2>
+      <p>Report what you found so the rightful owner can claim it.</p>
+      <a href="post-found.html" class="btn btn-success">Post Found Item</a>
+    </div>
+  </section>
+
+  <!-- Recent Items Feed -->
+  <section class="container recent-items-section">
+    <h2>Recently Reported Items</h2>
+    <div class="grid grid-3" id="recent-items-grid">
+      <!-- Populated via JS or mock static cards -->
+      <div class="card item-card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=400&q=80" alt="Brown Wallet">
+          <span class="badge badge-found">FOUND</span>
+        </div>
+        <div class="card-body">
+          <span class="category-tag">Accessories</span>
+          <h3>Brown Leather Wallet</h3>
+          <p class="location">📍 Central Library</p>
+          <p class="date">📅 July 20, 2026</p>
+          <a href="item-details.html?id=1" class="btn btn-outline btn-block">View Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Lost & Found Platform. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="about.html">About / Contact</a>
+        <a href="report.html">Report Fake Post</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

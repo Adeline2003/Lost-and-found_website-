@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+    <div class="nav-auth">
+      <a href="profile.html">My Profile</a>
+      <a href="index.html" class="btn btn-text">Logout</a>
+    </div>
+  </header>
+
+  <main class="container dashboard-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="dashboard-sidebar">
+      <nav class="sidebar-menu">
+        <a href="dashboard.html" class="active">📊 Overview</a>
+        <a href="my-posts.html">📋 My Posts</a>
+        <a href="my-claims.html">✋ My Claims</a>
+        <a href="messages.html">💬 Messages <span class="badge-count">2</span></a>
+        <a href="notifications.html">🔔 Notifications</a>
+        <a href="profile.html">⚙️ Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-main">
+      <h1>Welcome back, Jane! 👋</h1>
+      <p>Here is an overview of your activity.</p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>My Active Posts</h3>
+          <p class="stat-number">3</p>
+        </div>
+        <div class="stat-card">
+          <h3>Pending Claims</h3>
+          <p class="stat-number">1</p>
+        </div>
+        <div class="stat-card">
+          <h3>Unread Messages</h3>
+          <p class="stat-number">2</p>
+        </div>
+      </div>
+
+      <div class="dashboard-section">
+        <h2>Quick Actions</h2>
+        <div class="btn-group">
+          <a href="post-lost.html" class="btn btn-danger">+ Report Lost Item</a>
+          <a href="post-found.html" class="btn btn-success">+ Report Found Item</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

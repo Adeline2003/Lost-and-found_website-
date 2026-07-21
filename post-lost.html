@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Lost Item | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="form-card">
+      <span class="badge badge-lost">REPORT LOST ITEM</span>
+      <h2>Post a Lost Item</h2>
+
+      <form action="my-posts.html" method="GET">
+        <div class="form-group">
+          <label for="item-name">Item Name</label>
+          <input type="text" id="item-name" class="form-control" required placeholder="e.g., Apple AirPods Pro in Blue Case">
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label for="item-category">Category</label>
+            <select id="item-category" class="form-control" required>
+              <option value="">Select Category</option>
+              <option value="electronics">Electronics</option>
+              <option value="accessories">Personal Accessories</option>
+              <option value="documents">IDs & Documents</option>
+              <option value="keys">Keys</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date-lost">Date Lost</label>
+            <input type="date" id="date-lost" class="form-control" required>
+          </div>
+        </div>
+
+        <!-- Description with AI Placeholder -->
+        <div class="form-group">
+          <label for="item-description">Description</label>
+          <textarea id="item-description" class="form-control" rows="4" required placeholder="Mention distinct marks, scratch locations, or stickers..."></textarea>
+          <button type="button" class="ai-helper-btn" disabled>
+            ✨ Generate Description with AI <span class="badge-soon">Soon</span>
+          </button>
+        </div>
+
+        <!-- Location with Google Maps Placeholder -->
+        <div class="form-group">
+          <label for="location-lost">Location Lost</label>
+          <input type="text" id="location-lost" class="form-control" required placeholder="e.g., Student Union 2nd Floor Lounge">
+          <div class="map-placeholder-box">
+            📍 Select on Google Map <span class="badge-soon">Soon</span>
+          </div>
+        </div>
+
+        <!-- Image Upload with AI Match Placeholder -->
+        <div class="form-group">
+          <label for="upload-images">Upload Images</label>
+          <input type="file" id="upload-images" class="form-control" multiple accept="image/*">
+          <button type="button" class="ai-helper-btn" disabled>
+            🔍 Find Similar Items via AI <span class="badge-soon">Soon</span>
+          </button>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-info">Preferred Contact Info</label>
+          <input type="text" id="contact-info" class="form-control" required placeholder="Email or Phone Number">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Publish Lost Report</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

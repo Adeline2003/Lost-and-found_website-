@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Found Item | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+    <nav class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="form-card">
+      <span class="badge badge-found">REPORT FOUND ITEM</span>
+      <h2>Post a Found Item</h2>
+
+      <form action="my-posts.html" method="GET">
+        <div class="form-group">
+          <label for="found-item-name">Item Name</label>
+          <input type="text" id="found-item-name" class="form-control" required placeholder="e.g., Silver Stainless Water Bottle">
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label for="found-category">Category</label>
+            <select id="found-category" class="form-control" required>
+              <option value="">Select Category</option>
+              <option value="electronics">Electronics</option>
+              <option value="accessories">Personal Accessories</option>
+              <option value="documents">IDs & Documents</option>
+              <option value="keys">Keys</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="date-found">Date Found</label>
+            <input type="date" id="date-found" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="found-description">Description</label>
+          <textarea id="found-description" class="form-control" rows="4" required placeholder="Describe where you found it. Avoid revealing hidden identifying details so the real owner can verify."></textarea>
+          <button type="button" class="ai-helper-btn" disabled>
+            ✨ Generate Description with AI <span class="badge-soon">Soon</span>
+          </button>
+        </div>
+
+        <div class="form-group">
+          <label for="location-found">Location Found</label>
+          <input type="text" id="location-found" class="form-control" required placeholder="e.g., Science Building Room 104">
+          <div class="map-placeholder-box">
+            📍 Select Location on Map <span class="badge-soon">Soon</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="found-images">Upload Images</label>
+          <input type="file" id="found-images" class="form-control" multiple accept="image/*">
+        </div>
+
+        <div class="form-group">
+          <label for="found-contact">Contact / Pick-up Info</label>
+          <input type="text" id="found-contact" class="form-control" required placeholder="e.g., Left at Campus Security Desk">
+        </div>
+
+        <button type="submit" class="btn btn-success btn-block">Publish Found Item</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

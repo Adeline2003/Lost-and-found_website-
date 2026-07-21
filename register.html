@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+  </header>
+
+  <main class="container">
+    <div class="form-card">
+      <h2>Create an Account</h2>
+      <p class="form-subtitle">Join the platform to post lost or found items.</p>
+
+      <!-- UI Placeholder for Phase 2 Verification -->
+      <div class="alert alert-info">
+        ℹ️ Later, an email verification link will be sent upon registration.
+      </div>
+
+      <form action="dashboard.html" method="GET">
+        <div class="form-group">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" class="form-control" required placeholder="Jane Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" class="form-control" required placeholder="student@university.edu">
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label for="reg-phone">Phone Number</label>
+            <input type="tel" id="reg-phone" class="form-control" required placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="reg-studentid">Student ID <span class="text-muted">(Optional)</span></label>
+            <input type="text" id="reg-studentid" class="form-control" placeholder="ST-99482">
+          </div>
+        </div>
+
+        <div class="form-row-2col">
+          <div class="form-group">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" class="form-control" required placeholder="••••••••">
+          </div>
+          <div class="form-group">
+            <label for="reg-confirm-password">Confirm Password</label>
+            <input type="password" id="reg-confirm-password" class="form-control" required placeholder="••••••••">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Register Account</button>
+      </form>
+
+      <p class="form-footer-text">
+        Already have an account? <a href="login.html">Login here</a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>

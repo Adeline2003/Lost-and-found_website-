@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+    <a href="dashboard.html" class="btn btn-text">← Dashboard</a>
+  </header>
+
+  <main class="container messaging-container">
+    <!-- Conversation List -->
+    <aside class="conversations-list">
+      <div class="conversation-item active">
+        <strong>Alex Miller</strong>
+        <p class="preview-text">Re: Leather Wallet</p>
+      </div>
+    </aside>
+
+    <!-- Messaging Window -->
+    <section class="chat-window">
+      <div class="chat-header">
+        <h3>Chat with Alex Miller (Owner of "Brown Wallet")</h3>
+      </div>
+
+      <div class="chat-messages">
+        <div class="message msg-incoming">
+          <p>Hello, I think this wallet is mine.</p>
+          <span class="msg-time">10:14 AM</span>
+        </div>
+        <div class="message msg-outgoing">
+          <p>Hi Alex! Can you describe any distinct items inside?</p>
+          <span class="msg-time">10:16 AM</span>
+        </div>
+        <div class="message msg-incoming">
+          <p>Yes, it has a gold gym card and a library pass with ID ending in 482.</p>
+          <span class="msg-time">10:18 AM</span>
+        </div>
+      </div>
+
+      <form class="chat-input-bar">
+        <input type="text" class="form-control" placeholder="Type message..." required>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

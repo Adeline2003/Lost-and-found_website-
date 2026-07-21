@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+  </header>
+
+  <main class="container">
+    <div class="form-card">
+      <h2>Welcome Back</h2>
+      <p class="form-subtitle">Log in to manage your posts and claims.</p>
+
+      <form action="dashboard.html" method="GET">
+        <div class="form-group">
+          <label for="login-email">Email Address</label>
+          <input type="email" id="login-email" class="form-control" required placeholder="student@university.edu">
+        </div>
+
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" required placeholder="••••••••">
+        </div>
+
+        <div class="form-row flex-between">
+          <label class="checkbox-label">
+            <input type="checkbox" id="remember-me"> Remember Me
+          </label>
+          <a href="#" class="link-text">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+
+      <p class="form-footer-text">
+        Don't have an account? <a href="register.html">Register here</a>
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>

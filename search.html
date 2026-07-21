@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Items | Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cards.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-brand"><a href="index.html">🔍 Lost & Found</a></div>
+    <nav class="nav-links">
+      <a href="search.html" class="active">Browse Items</a>
+      <a href="post-lost.html" class="btn btn-outline-danger">Report Lost</a>
+      <a href="post-found.html" class="btn btn-outline-success">Report Found</a>
+    </nav>
+  </header>
+
+  <main class="container layout-search">
+    <!-- Search Sidebar Filters -->
+    <aside class="search-sidebar">
+      <h3>Filter Results</h3>
+      
+      <div class="form-group">
+        <label for="search-keyword">Keyword</label>
+        <input type="text" id="search-keyword" class="form-control" placeholder="Search title, details...">
+      </div>
+
+      <div class="form-group">
+        <label for="filter-type">Status Type</label>
+        <select id="filter-type" class="form-control">
+          <option value="all">All (Lost & Found)</option>
+          <option value="lost">Lost Only</option>
+          <option value="found">Found Only</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="filter-category">Category</label>
+        <select id="filter-category" class="form-control">
+          <option value="all">All Categories</option>
+          <option value="Accessories">Accessories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Keys">Keys</option>
+          <option value="Documents">Documents</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Search Results Grid -->
+    <section class="search-results-container">
+      <h2>Search Items</h2>
+      <div class="grid grid-2" id="search-results-grid">
+        <!-- Javascript renders cards dynamically here -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
